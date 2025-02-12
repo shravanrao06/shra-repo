@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ratnagiri Tourism</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .image-description {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .go-back-btn {
+            display: block;
+            margin: 50px auto;
+            padding: 10px 20px;
+            background-color: #4db6ac;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .go-back-btn:hover {
+            background-color: #388e8e;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <img src="https://th.bing.com/th/id/OIP.ZKj5oea8YyMpxoa_deBXmwHaEK?w=331&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="maharaj" alt="maharaj">
-    <img src=https://th.bing.com/th/id/OIP.Y6ITQ7lpvn8o2UAvi9uR6gHaHa?w=221&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="bappa" alt="bappa">
+
+  
+    <div class="container">
+        <h2 class="text-center mt-5 mb-4">Explore Ratnagiri</h2>
+
+        
+        <div class="image-grid">
+            
+            <div class="image-container">
+                <img src="photos/image.png" alt="Image 1">
+                <div class="image-label">karade beach</div>
+                <div class="image-description">One of the most popular places to visit in Dapoli, Karde Beach is a prized possession of the Konkan coastline. Stretching for four kilometres, the soft and silky sand shimmers and glitters when the sun rays reflect on it.</div>
+            </div>
+
+         
+            <div class="image-container">
+                <img src="photos/image1.png" alt="Image 2">
+                <div class="image-label">Swayambhu Ganapati Temple</div>
+                <div class="image-description">Swayambhu Ganapati Temple is a 400-year-old Ganesha temple, made of pule or white sand. It is believed to be a self-made monolith of Lord Ganesha, discovered 1600 years ago.</div>
+            </div>
+
+            
+            <div class="image-container">
+                <img src="photos/image2.png" alt="Image 3">
+                <div class="image-label">Jaigad Lighthouse</div>
+                <div class="image-description">Jaigad Lighthouse is a top priority when it comes to places to visit in Ratnagiri and is situated in one of the bastions on the western side of the Jaigad Fort.</div>
+            </div>
+
+           
+            <div class="image-container">
+                <img src="photos/image3.png" alt="Image 4">
+                <div class="image-label">Ratnadurga Fort</div>
+                <div class="image-description">Also known as Ratnagiri Fort or Bhagwati Fort, Ratnadurg Fort is one of the main tourist attractions in Ratnagiri district. Being surrounded by the Arabian Sea on all the three sides, strong boundaries in the form of fortifications and bastions on every side and it is definitely one of the most important places to visit in Ratnagiri</div>
+            </div>
+
+            
+            <div class="image-container">
+                <img src="photos/image4.png" alt="Image 5">
+                <div class="image-label">Keshavraj Temple</div>
+                <div class="image-description">Situated in the middle of the natural beauty and lusciousness of a petit village called Asud in Dapoli, the Keshavraj Temple is among the best places to visit in Dapoli and the entire Ratnagiri District. Immersed in tranquillity and dense forest, natural streams and stunning trails, the temple is dedicated to Lord Vishnu.</div>
+            </div>
+
+          
+        </div>
+    </div>
+    <a href="index.html"><button class="go-back-btn">Go Back</button></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
